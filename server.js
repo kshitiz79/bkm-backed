@@ -20,8 +20,10 @@ app.use(limiter);
 
 // CORS configuration
 app.use(cors({
-  origin: ['http://localhost:3000', 'https://bkmglobal.in'], // Add your frontend URLs
-  credentials: true
+  origin: ['http://localhost:3000', 'https://bkmglobal.in'],
+  credentials: true,
+  methods: ['GET', 'POST', 'PUT', 'DELETE', 'OPTIONS'], // explicitly allow
+  allowedHeaders: ['Content-Type', 'Authorization'], // optional: specify if needed
 }));
 
 // Body parser middleware
