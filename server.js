@@ -20,7 +20,7 @@ app.use(limiter);
 
 // CORS configuration
 app.use(cors({
-  origin: ['http://localhost:3000', 'https://your-domain.com'], // Add your frontend URLs
+  origin: ['http://localhost:3000', 'https://bkmglobal.in'], // Add your frontend URLs
   credentials: true
 }));
 
